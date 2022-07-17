@@ -65,5 +65,5 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 #Custom Info
-WEBSITE = environ.get('WEBSITE', "droplink.co")
+WEBSITE = environ.get('WEBSITE', "google.com")
 API = environ.get('API', '1234')
