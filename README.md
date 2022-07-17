@@ -17,6 +17,7 @@
 
 ## Features
 
+- [x] Money Earings
 - [x] Auto Filter
 - [x] Manual Filter
 - [x] IMDB
