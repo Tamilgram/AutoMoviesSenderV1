@@ -66,4 +66,4 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 #Custom Info
 WEBSITE = environ.get('WEBSITE', "google.com")
-API = environ.get('API', '1234')
+API_KEY = environ.get('API', '1234')
