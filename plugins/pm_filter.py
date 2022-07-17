@@ -9,7 +9,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, WEBSITE, API
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, WEBSITE, API_KEY
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)} {file.file_name}", url=f'https://{WEBSITE}/st?api={API}&url=https://t.me/{temp.U_NAME}?start=files_{file.file_id}'
+                    text=f"{get_size(file.file_size)} {file.file_name}", url=f'https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start=files_{file.file_id}'
                 ),
             ]
             for file in files
@@ -73,11 +73,11 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", url=f'https://{WEBSITE}/st?api={API}&url=https://t.me/{temp.U_NAME}?start=files_{file.file_id}'
+                    text=f"{file.file_name}", url=f'https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start=files_{file.file_id}'
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
-                    url=f'https://{WEBSITE}/st?api={API}&url=https://t.me/{temp.U_NAME}?start=files_{file.file_id}',
+                    url=f'https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start=files_{file.file_id}',
                 ),
             ]
             for file in files
@@ -368,9 +368,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://du-link.in/st?api=aeebdb7ca0a0819ea9ae1b6177ea22de1ec52f88&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
-            await query.answer(url=f"https://du-link.in/st?api=aeebdb7ca0a0819ea9ae1b6177ea22de1ec52f88&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+            await query.answer(url=f"https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
             await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
@@ -651,11 +651,11 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
-                    url=f'https://{WEBSITE}/st?api={API}&url=https://t.me/{temp.U_NAME}?start={pre}_{file.file_id}',
+                    url=f'https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start={pre}_{file.file_id}',
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
-                    url=f'https://{WEBSITE}/st?api={API}&url=https://t.me/{temp.U_NAME}?start={pre}_{file.file_id}',
+                    url=f'https://{WEBSITE}/st?api={API_KEY}&url=https://t.me/{temp.U_NAME}?start={pre}_{file.file_id}',
                 ),
             ]
             for file in files
