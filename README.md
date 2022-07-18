@@ -41,8 +41,6 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `CHANNEL_NAME` : Enter Your Telegram Movies Channel Name.
-* `CHANNEL_LINK` : Enter Your Movies Channel Link.
 * `WEBSITE` : Enter Your URL Shortener Website.
 * `API_KEY` : Enter Your URL Shortener Api Key
 ### Optional Variables
@@ -59,7 +57,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://telegram.dog/XTZ_HerokuBot?start=RXZhbWFyaWFURy9FdmFNYXJpYSBtYXN0ZXI">
+<a href="https://telegram.dog/XTZ_HerokuBot?start">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
