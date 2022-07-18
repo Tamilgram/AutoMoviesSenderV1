@@ -18,7 +18,7 @@
 ## Features
 
 - [x] Money Earings
-- [×] Force Sub
+- [x] Force Sub
 - [x] Auto Filter
 - [x] Manual Filter
 - [x] IMDB
