@@ -40,7 +40,7 @@
         },
         "UPSTREAM_REPO": {
             "description": "Enter Your MovieSender Repo link",
-            "value", : "https://github.com/Tamilgram/AutoMoviesSenderV1",
+            "value": "https://github.com/Tamilgram/AutoMoviesSenderV1",
             "required": false
         },
         "PICS": {
