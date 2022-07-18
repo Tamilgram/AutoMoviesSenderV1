@@ -38,6 +38,11 @@
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "required": true
         },
+        "UPSTREAM_REPO": {
+            "description": "Enter Your MovieSender Repo link",
+            "value", : "https://github.com/Tamilgram/AutoMoviesSenderV1",
+            "required": false
+        },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
             "required": false
