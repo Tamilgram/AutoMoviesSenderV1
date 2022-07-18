@@ -74,6 +74,14 @@
         "API_KEY": {
             "description": "Enter Your Website API KEY",
             "required": true
+        },
+        "CHANNEL_NAME": {
+            "description": "Enter Your Telegram Movies Channel Name",
+            "required": true
+        },
+        "CHANNEL_LINK": {
+            "description": "Enter Your Telegram Movies Channel Link",
+            "required": true
         }
     },
     "addons": [],
