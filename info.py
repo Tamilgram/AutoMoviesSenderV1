@@ -67,3 +67,5 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 #Custom Info
 WEBSITE = environ.get('WEBSITE', "google.com")
 API_KEY = environ.get('API_KEY', "1234")
+CUSTOM_WELCOME = environ.get('CUSTOM_WELCOME', "Hi")
+CUSTOM_FORCESUB = environ.get('CUSTOM_FORCESUB', "Please Join Channel To Using Me)
