@@ -17,7 +17,10 @@
 
 ## Features
 
-- [x] Money Earings
+- [x] Url Shortener
+- [x] 2GB+ Files Support
+- [x] Custom Welcome Message
+- [x] Custom Force Sub Message 
 - [x] Force Sub
 - [x] Auto Filter
 - [x] Manual Filter
