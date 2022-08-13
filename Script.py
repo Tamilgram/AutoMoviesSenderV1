@@ -1,3 +1,4 @@
+from info import*
 class script(object):
     START_TXT = """{CUSTOM_WELCOME}"""
     HELP_TXT = """𝙷𝙴𝚈 {}
