@@ -18,7 +18,6 @@
 ## Features
 
 - [x] Url Shortener
-- [x] 2GB+ Files Support
 - [x] Custom Welcome Message
 - [x] Custom Force Sub Message 
 - [x] Force Sub
